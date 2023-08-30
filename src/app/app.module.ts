@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NgrxchildComponent } from './ngrxchild/ngrxchild.component';
 import { NgrxparentComponent } from './ngrxparent/ngrxparent.component';
 import { NgrxService } from './ngrx.service';
-import { StoreModule } from '@ngrx/store';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { StoreModule } from '@ngrx/store';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot({}, {})
   ],
   providers: [NgrxService],
   bootstrap: [AppComponent]

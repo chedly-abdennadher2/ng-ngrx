@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgrxService } from '../ngrx.service';
-
+import { interval, take } from 'rxjs';
+ 
 @Component({
   selector: 'app-ngrxchild',
   templateUrl: './ngrxchild.component.html',
@@ -20,5 +21,7 @@ disAction()
     type:'SUB',
     payload: 56
   })
+
+
 }
 }
