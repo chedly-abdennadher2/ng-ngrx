@@ -22,6 +22,5 @@ disAction()
     type:'ADD',
     payload: 56
   })
-alert (this.state)
 }
 }
